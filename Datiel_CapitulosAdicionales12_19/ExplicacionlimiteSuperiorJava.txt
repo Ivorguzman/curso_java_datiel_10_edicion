@@ -1,0 +1,11 @@
+¡Entiendo tu pregunta! La especificación de un límite superior en Java se usa principalmente en el contexto de clases genéricas y métodos genéricos. No es algo que se use en clases normales que no son
+genéricas.
+Vamos a ponerlo aún más sencillo con un ejemplo de la vida real:
+Imagina que tienes una colección de frutas, pero solo quieres manzanas en tu cesta. En este caso, la cesta sería como una clase genérica, y el límite superior sería la manzana. Esto significa que puedes
+poner manzanas o cualquier tipo de manzana (como manzanas rojas, verdes, etc.), pero no otras frutas como plátanos o naranjas.
+En Java, cuando trabajas con genéricos, a veces quieres que solo ciertos tipos de objetos puedan ser usados. Por ejemplo, si tienes una clase genérica Caja<T>, y quieres que solo acepte números, pondrías un
+límite superior así: Caja<T extends Number>. Esto significa que puedes usar Caja<Integer>, Caja<Double>, etc., porque Integer y Double son subclases de Number, pero no podrías usar Caja<String> porque String no es un
+número.
+En resumen, el límite superior se usa para asegurarte de que los tipos genéricos sean del tipo correcto que necesitas para tu código, y esto solo se aplica a las clases y métodos genéricos, no a las clases
+normales.
+Espero que esta explicación sea fácil de entender. Si tienes más dudas, ¡aquí estoy para ayudarte!
