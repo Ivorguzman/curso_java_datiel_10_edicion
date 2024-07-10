@@ -3,11 +3,12 @@ package consultas_en_base_de_dato_libros_25_8_2;
 // Fig. 24.25: ResultSetTableModel.java
 // A TableModel that supplies ResultSet data to a JTable.
 import java.sql.Connection;
-import java.sql.Statement;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.sql.Statement;
+
 import javax.swing.table.AbstractTableModel;
 
 // ResultSet rows and columns are counted from 1 and JTable

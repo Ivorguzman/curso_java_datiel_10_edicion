@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class TirarDado {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		// el objeto numerosAleatorios producirá números aleatorios seguros
