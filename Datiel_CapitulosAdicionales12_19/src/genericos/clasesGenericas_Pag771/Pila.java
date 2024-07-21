@@ -28,15 +28,23 @@ public class Pila<E> extends Object {
 	// constructor_2 Crea una pila del número especificado de elementos e indicando que esta vacia y creando al array (contenedor de la pila)
 	public Pila(int s) { // Comprovación del argumento (int s)
 		this.tamanio = s > 0 ? s : 10; // establece uno de los dos valore segun ausencia del parametro o no el tamaño de la Pila
-		this.PosicionSuperior = -1; // al principio, la Pila está vacía (Qualquier valor negativo indica que la pila esta vacia (LIFO-UEPS))
+
+
+		// Esta variable (PosicionSuperior) representala posición del último elemento añadido a la pila
+		this.PosicionSuperior = -1; // se utiliza para indicar que la pila está vacía al momento de su creación (el valor 1 negativo indica que la pila esta vacia )
+
+
+
 		/*
 		 * En Java, no se pueden crear directamente arreglos de un tipo genérico (E[])
 		 * porque el tipo E no está disponible cuando el programa se está ejecutando.
 		 * Esto se debe a que los genéricos en Java son solo una característica
 		 * del compilador y no existen en tiempo de ejecución.
+		 * 
 		 * Solución con Arreglos de Object:
-		 * Para solucionar esto, se crea un arreglo de tipo Object y luego se convierte (o “castea”) a un arreglo del tipo E[].
-		 * Esto se hace en el constructor de la clase Pila (en la línea 22
+		 * Para solucionar esto, se crea un arreglo de tipo Object y luego
+		 * se convierte (o “castea”) a un arreglo del tipo E[].
+		 * Esto se hace en el constructor de la clase Pila en la línea : this.elementos = (E[]) new Object[this.tamanio];
 		 * 
 		 * Comprobación de Tipos:
 		 * Aunque el arreglo es técnicamente de tipo Object, el compilador de Java se
