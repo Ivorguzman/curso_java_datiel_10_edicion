@@ -37,7 +37,7 @@ public class ExcepcionPilaLlena extends RuntimeException {
  * 
  * La necesidad de estructurar los constructores de esta manera:
  * 
- * enla clase ExcepcionPilaLlena tiene varias ventajas:
+ * en la clase ExcepcionPilaLlena tiene varias ventajas:
  * 
  * Reutilización de Código: Al llamar al constructor con un argumento
  * desde el constructor sin argumentos, se evita duplicar el código.

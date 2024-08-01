@@ -84,30 +84,39 @@ public class Pila<E> extends Object {
 		 * 1. this.PosicionSuperior:
 		 * Qué es: Es una variable que indica la posición actual en la pila donde se encuentra el último elemento.
 		 * Por qué es importante: Nos ayuda a saber cuántos elementos hay en la pila en cualquier momento.
+		 * 
 		 * 2. this.tamanio:
 		 * Qué es: Es una variable que representa el tamaño máximo de la pila, es decir,
 		 * cuántos elementos puede contener en total.
 		 * Por qué es importante: Nos dice cuántos elementos podemos añadir a la pila antes de que se llene.
+		 * 
 		 * 3. this.tamanio - 1:
 		 * Qué es: Es el índice de la última posición disponible en la pila.
 		 * Por qué es importante: En programación, los índices suelen empezar en 0,
 		 * así que si una pila puede contener 10 elementos, el índice de la última posición será 9 (10 - 1).
+		 * 
+		 * 
 		 * 4. ==:
 		 * Qué es: Es un operador de comparación.
 		 * Por qué es importante: Se usa para verificar si dos valores son iguales.
+		 * 
 		 * ¿Qué hace esta línea?
 		 * La línea de código:
 		 * if (this.PosicionSuperior == this.tamanio - 1)
-		 * verifica si la posición actual (this.PosicionSuperior) es igual al índice de la última posición disponible en la pila (this.tamanio - 1).
+		 * verifica si la posición actual (this.PosicionSuperior) es igual al índice de la última
+		 * posición disponible en la pila (this.tamanio - 1).
+		 * 
+		 * 
 		 * ¿Por qué es importante?
 		 * Propósito: Esta verificación se hace para saber si la pila está llena.
-		 * Resultado: Si this.PosicionSuperior es igual a this.tamanio - 1, significa que la pila está llena y no se pueden añadir más elementos. En ese caso, se lanza una
-		 * excepción (ExcepcionPilaLlena).
+		 * Resultado: Si this.PosicionSuperior es igual a this.tamanio - 1,
+		 * significa que la pila está llena y no se pueden añadir más elementos.
+		 * En ese caso, se lanza una excepción (ExcepcionPilaLlena).
+		 * 
 		 * Ejemplo
-		 * Imagina que tienes una pila que puede contener hasta 5 elementos (tamanio = 5). Los índices van de 0 a 4 (tamanio - 1 = 4). Si PosicionSuperior es 4, significa que
-		 * ya hay 5 elementos en la pila y no puedes
-		 * añadir más.
-		 * Espero que esta explicación te haya ayudado a entender mejor esa línea de código. ¿Hay algo más en lo que pueda ayudarte?
+		 * Imagina que tienes una pila que puede contener hasta 5 elementos (tamanio = 5).
+		 * Los índices van de 0 a 4 (tamanio - 1 = 4).
+		 * Si PosicionSuperior es 4, significa que ya hay 5 elementos en la pila y no puedes añadir más.
 		 * 
 		 */
 		// Indica que la pila esta llena
