@@ -105,13 +105,19 @@ public class Pila<E> extends Object {
  * 
  * La clase Pila<E> se declara como una clase genérica que puede almacenar elementos de cualquier tipo.
  * 
+ * 
+ * 
  * Se definen tres variables:
  * 
  * private final int tamanio: Almacena el número máximo de elementos que la pila puede contener.
  * 
- * private int superior = -1: Representa la ubicación del último elemento añadido a la pila. Inicialmente, se establece en -1 para indicar que la pila está vacía.
+ * private int superior = -1: Representa la ubicación del último elemento añadido a la pila.
+ * 
+ * Inicialmente, se establece en -1 para indicar que la pila está vacía.
  * 
  * private E[] elementos: Un array genérico que almacena los elementos de la pila.
+ * 
+ * 
  * 
  * Constructor sin Argumentos:
  * 
@@ -125,13 +131,15 @@ public class Pila<E> extends Object {
  * }
  * 
  * 
+ * 
+ * 
  * Constructor con Argumentos:
  * 
- * Se define un constructor que recibe un argumento s, el cual especifica el tamaño de la pila.
+ * Se define un constructor que recibe un argumento (s), el cual especifica el tamaño de la pila.
  * 
  * La variable superior se establece en -1 para indicar que la pila está vacía.
  * 
- * La variable tamanio se asigna con el valor de s si es mayor que 0; de lo contrario, se asigna el valor predeterminado de 10.
+ * La variable tamanio se asigna con el valor de (s) si es mayor que 0; de lo contrario, se asigna el valor predeterminado de 10.
  * 
  * El array elementos se inicializa como un nuevo array de tipo Object y se castea a E[].
  * 
@@ -141,6 +149,9 @@ public class Pila<E> extends Object {
  * this.tamanio = s > 0 ? s : 10;
  * this.elementos = (E[]) new Object[this.tamanio];
  * }
+ * 
+ * 
+ * 
  * 
  * Método push(E valorAMeter):
  * 
