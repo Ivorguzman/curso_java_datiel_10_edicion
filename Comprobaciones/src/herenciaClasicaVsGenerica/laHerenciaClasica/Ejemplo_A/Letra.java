@@ -1,4 +1,4 @@
-package herenciaClasicaVsGenerica.laHerenciaClasica;
+package herenciaClasicaVsGenerica.laHerenciaClasica.Ejemplo_A;
 
 public class Letra extends Alfabeto {
 
