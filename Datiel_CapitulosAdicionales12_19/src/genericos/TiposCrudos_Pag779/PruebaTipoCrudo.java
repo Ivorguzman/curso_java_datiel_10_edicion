@@ -3,12 +3,13 @@ package genericos.TiposCrudos_Pag779;
 import java.util.Arrays;
 
 public class PruebaTipoCrudo {
-	private Double[] elementosDouble = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6 };
+	private Double[] elementosDouble = { 1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7 };
 	private Integer[] elementosInteger = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 
 	public void probarPilas() {
-		Pila pilaTipoCrudo1 = new Pila(5);// Pila de tipos crudos asignada a una variable Pila de tipos crudos
-		Pila pilaTipoCrudo2 = new Pila<Double>(5);// Pila< Double > asignada a una variable Pila de tipos crudos
+		//
+		Pila pilaTipoCrudo1 = new Pila(2);// Pila de tipos crudos asignada a una variable Pila de tipos crudos
+		Pila pilaTipoCrudo2 = new Pila<Double>(4);// Pila< Double > asignada a una variable Pila de tipos crudos
 		Pila<Integer> pilaInteger = new Pila(10);// Pila de tipos crudos asignada a una variable Pila< Integer >
 
 		
@@ -28,6 +29,8 @@ public class PruebaTipoCrudo {
 
 
 	// método genérico que mete elementos a la pila
+	// En el método probarPush, manejas tanto pilas de tipos crudos como pilas genéricas:
+	// Pila se ha declarado sin un tipo genérico, por lo que es una pila de tipo crudo.
 	public <T> void probarPush(String nombre, Pila<T> pila, T[] elementos) {
 		// mete elementos a la pila
 		try{

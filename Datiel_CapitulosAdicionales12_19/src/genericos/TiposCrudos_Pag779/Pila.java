@@ -22,6 +22,8 @@ public class Pila<E> extends Object {
 
 	
 	
+
+
 	public void push(E valorAMeter) throws ExcepcionPilaLlena {
 		if (this.superior == this.tamanio - 1){
 			throw new ExcepcionPilaLlena(String.format("Esta pila esta llena no se puede añadir el  elemento %s", valorAMeter));
